@@ -1,0 +1,21 @@
+camera_undistort_node:
+  input_topic: "/usb_cam/image_raw"
+  output_topic: "/usb_cam/image_rect"
+  output_camera_info_topic: "/usb_cam/camera_info_rect"
+
+  image_width: 1920
+  image_height: 1200
+
+  fx: 750.6022573008312
+  fy: 752.160192071341
+  cx: 959.2247459250367
+  cy: 581.7438043416802
+
+  dist_coeffs: [0.3513712123496613, 0.17902195708944021, -0.28688916527785197, 0.11284247068393805]
+
+  balance: 1.0
+  use_same_k_for_output: false
+
+
+
+  

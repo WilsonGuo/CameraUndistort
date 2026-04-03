@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="camera_undistort_node" type="camera_undistort_node" name="camera_undistort_node"  output="screen" /> 
+
+</launch>
