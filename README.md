@@ -44,3 +44,19 @@ camera_undistort_node
        balance: 1.0                                  // 去畸变后视场保留比例（类似 OpenCV fisheye 的 balance）取值范围： 0 完全去畸变（裁剪掉边缘黑区，视野最小） 1 保留全部视野（可能出现黑边）
        use_same_k_for_output: false                  // 是否使用原始K作为输出K矩阵 ,默认 false:输出新的K矩阵（推荐）与rect图像严格匹配
                     
+#### 使用
+
+订阅话题：
+
+       input_topic: "/usb_cam/image_raw"   // 输入的原始图像topic（带畸变的相机图像）
+       
+输出话题： 
+
+       output_topic: "/usb_cam/image_rect" // 输出的去畸变后的图像topic
+      
+       output_camera_info_topic: "/usb_cam/camera_info_rect"  // 输出的去畸变后的相机内参信息（camera_info） 
+
+启动launch文件：
+
+      roslaunch camera_undistort_node camera_undistort_node.launch
+      
