@@ -2,6 +2,8 @@
 
 ##### 系统：Ubuntu20.04 ROS Noetic
 
+![CameraUndistort](./img/demo.png)
+
 ###### 配置参数介绍：
 
 config/camera_intrinsics.yaml:配置标定后的相机内参（建议用Kalibr标定）
