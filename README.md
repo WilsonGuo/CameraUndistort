@@ -2,6 +2,8 @@
 
 ##### 系统：Ubuntu20.04 ROS Noetic
 
+[《Kalibr标定--单目广角相机标定》教程地址](https://gitee.com/gwmunan/ros2/wikis/pages?sort_id=17517744&doc_id=4855084)
+
 ![CameraUndistort](./img/demo.png)
 
 ###### 配置参数介绍：
